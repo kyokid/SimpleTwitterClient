@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="12dp"
+    android:paddingLeft="12dp"
+    >
+
+    <ImageView
+        android:id="@+id/img_profile"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/img_tweet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_username"
+        android:layout_below="@+id/txt_body" />
+
+    <TextView
+        android:id="@+id/txt_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/img_profile"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_toEndOf="@+id/img_profile"
+        android:layout_toRightOf="@+id/img_profile"
+        android:text="@string/user_name"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_screen_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/txt_username"
+        android:layout_toEndOf="@+id/txt_username"
+        android:layout_toRightOf="@+id/txt_username"
+        android:text="@string/screen_name"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/txt_created_at"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/txt_username"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/created_at"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/txt_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_username"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@+id/img_profile"
+        android:layout_toRightOf="@+id/img_profile"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/body"
+        android:textColor="@android:color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txt_body"
+        android:layout_alignLeft="@+id/txt_body"
+        android:layout_alignRight="@+id/txt_body"
+        android:layout_alignStart="@+id/txt_body"
+        android:layout_below="@+id/img_tweet"
+        >
+
+        <TextView
+            android:id="@+id/txt_reply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_reply"
+            android:drawableStart="@drawable/ic_reply"
+
+            />
+
+        <TextView
+            android:id="@+id/txt_reTweet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_retweet"
+            android:drawableStart="@drawable/ic_retweet"
+            tools:text="25"
+            />
+
+        <TextView
+            android:id="@+id/txt_favorite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_favorite"
+            android:drawableStart="@drawable/ic_favorite"
+            tools:text="30"
+            />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

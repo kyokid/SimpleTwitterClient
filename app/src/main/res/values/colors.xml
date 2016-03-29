@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="colorTweet">#55acee</color>
+    <color name="gray">#bdbdbd</color>
+    <color name="disable">#CC55ACEE</color>
+    <color name="colorCuriousBlue">#3D85C6</color>
+
+</resources>

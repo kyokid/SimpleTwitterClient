@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Twitter Client</string>
+    <string name="login_label">Connect to Twitter</string>
+    <string name="title_activity_timeline">Home Timeline</string>
+    <string name="user_name">Username</string>
+    <string name="screen_name">ScreenName</string>
+    <string name="created_at">CreatedAt</string>
+    <string name="body">Body</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="button_close">CLOSE</string>
+    <string name="hint">What\'s happening?</string>
+    <string name="limit_txt">140</string>
+
+</resources>
